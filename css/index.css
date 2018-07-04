@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Big Noodle Titling';
+    src: url(../css/fonts/big_noodle_titling.ttf);
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    color: #353535;
+    font-family: 'Big Noodle Titling', Arial, sans-serif;
+}
+/*Banner Section Start*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 600px;
+    background-color: #353535;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    background-color: #f8f6f6;
+    border-bottom: 3px solid #edebeb;
+}
+.menu {
+    width: 30px;
+    height: 30px;
+    border: 1px solid blue;
+    margin-right: 15%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+.logo span {
+    font-family: 'Big Noodle Titling', Arial, sans-serif;
+    color: #696969;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+.logo img {
+    height: 35px;
+    width: 40px;
+}
+.banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-text span:first-child {
+    color: #d6d5d5;
+    font-size: 56px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 7.8px;
+    width: 90%;
+    text-align: center;
+}
+.banner-text span:last-child {
+    color: #d6d5d5;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    width: 90%;
+    text-align: center;
+}
+.scroll-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+.scroll-down img {
+    width: 30px;
+    height: 30px;
+}
+.scroll-down span {
+    font-size: 15px;
+    color: #d6d5d5;
+    margin-top: 10px;
+}
+.scroll-sign {
+    display: flex;
+    justify-content: center;
+}
+/*Banner Section End*/
+/*About Section Start*/
+.about-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.about-text {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.about-text span {
+    width: 100%;
+    text-align: center;
+}
+.about-text span:first-child {
+    color: #3d3d3d;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+     text-decoration: underline red;
+}
+.about-text span:last-child {
+    color: #696969;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.about-blocks {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    height: 35%;
+}
+.about-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 30%;
+    height: 100%;
+    background-color: #ebebeb;
+}
+.about-items img {
+    height: 50px;
+    width: 50px;
+}
+.about-items .about-heading {
+    color: orange;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+.about-items span:last-child {
+    color: #707070;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    text-align: center;
+    width: 80%;
+}
+/*About Section End*/
