@@ -2,6 +2,9 @@
     font-family: 'Big Noodle Titling';
     src: url(../css/fonts/big_noodle_titling.ttf);
 }
+html {
+    background-color: #f5f0f0;
+}
 body {
     max-width: 1000px;
     margin: 0 auto;
@@ -17,7 +20,11 @@ body {
     justify-content: space-between;
     height: 100vh;
     min-height: 600px;
-    background-color: #353535;
+    background-image: url("../img/paris-background.jpg");
+    background-repeat: no-repeat;
+    background-position: right 90px;
+    background-size: cover; 
+    
 }
 .header {
     display: flex;
@@ -81,6 +88,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 80px;
+    text-decoration: none;
 }
 .scroll-down img {
     width: 30px;
@@ -100,13 +108,14 @@ body {
 .about-container {
     display: flex;
     height: 100vh;
+    min-height: 600px;
     flex-direction: column;
 }
 .about-first {
     height: 60%;
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .about-text {
@@ -114,6 +123,7 @@ body {
     height: 25%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .about-text span {
     width: 100%;
@@ -132,7 +142,7 @@ body {
     font-family: "Roboto", "Times New Roman", serif;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .about-blocks {
     width: 70%;
@@ -147,6 +157,7 @@ body {
     align-items: center;
     flex-basis: 30%;
     height: 100%;
+    min-height: 100px;
     background-color: #ebebeb;
 }
 .about-items img {
@@ -178,11 +189,114 @@ body {
 .play-container {
     width: 50%;
     height: 100%;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-container span:first-child {
+    color: #e7e7e7;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px;
+}
+.play-container .play-text {
+    color: #696969;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 10px;
+    font-weight: 400; 
+    text-align: center;
+    width: 70%;
+}
+.play-container button {
+    width: 130px;
+    height: 38px;
+    background-color: #e84c3d;
+    color: #ebebeb;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+    margin-bottom: 35px;
 }
 .video-container {
     width: 50%;
     height: 100%;
-    border: 1px solid red;
 }
 /*About Section End*/
+/*Our Work Section Start*/
+.work {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.work-header {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.work-title {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+.work-title span {
+    width: 100%;
+    text-align: center;
+}
+.work-title span:first-child {
+    color: #3d3d3d;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: underline red;
+    margin-top: 40px;
+}
+.work-title span:last-child {
+    color: #696969;
+    width: 50%;
+    font-family: "Roboto", "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin: auto;
+}
+.work-nav {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-nav ul {
+    list-style-type: none;
+    width: 60%;
+}
+.work-nav li {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.work-nav li.active {
+    text-decoration: underline red;
+}
+.projects {
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects a {
+    width: 20%;
+}
+.projects img {
+    width: 100%;
+    height: 100%;
+}
+/*Our Work Section End*/
